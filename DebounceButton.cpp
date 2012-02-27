@@ -40,7 +40,9 @@ DebounceButton::DebounceButton(byte buttonPin, byte type, unsigned long debounce
 DebounceButton::~DebounceButton() {
   for(int i=this->id; i<buttonId; ++i) {
     buttons[i] = buttons[i+1];
-    //TODO: update the ID of the moved buttons
+    if(i < buttonId-1) { // The last iteration sets the previous last to NULL
+    	buttons[i]->id = 1;
+    }
   }
   buttonId--;
 }

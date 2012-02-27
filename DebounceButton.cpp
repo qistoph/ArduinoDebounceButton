@@ -80,7 +80,7 @@ boolean DebounceButton::update() {
       downTime = now - lastDebounceTime - debounceDelay;
 
       if(holdDelay > 0 && // The owner wants hold events, and
-        (!holdSent || holdInterval > 0 && (now - holdSent) > holdInterval) && // we haven't sent the event yet or it's time for another, and
+        ((!holdSent || holdInterval > 0) && (now - holdSent) > holdInterval) && // we haven't sent the event yet or it's time for another, and
         downTime > holdDelay && // we have waited long enough, and
         onHold != NULL) { // someone is actually listening
           onHold(this);

@@ -1,0 +1,32 @@
+#######################################
+# Syntax Coloring Map For Buttons
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DebounceButton	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+update	KEYWORD2
+justPressed	KEYWORD2
+justReleased	KEYWORD2
+isPressed	KEYWORD2
+setType	KEYWORD2
+onPress	KEYWORD2
+onRelease	KEYWORD2
+onClick	KEYWORD2
+onHold	KEYWORD2
+updateAll	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DBTN_PULLDOWN	LITERAL1
+DBTN_PULLUP	LITERAL1
+DBTN_PULLUP_INTERNAL	LITERAL1

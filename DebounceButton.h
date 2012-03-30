@@ -20,7 +20,7 @@
 #ifndef DebounceButton_h
 #define DebounceButton_h
 
-#include "WProgram.h"
+#include "Arduino.h"
 
 #define DBTN_MAX_BUTTONS    20
 
